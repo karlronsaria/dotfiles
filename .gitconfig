@@ -1,3 +1,5 @@
 [user]
 	email = andrew.mikedaniels@gmail.com
 	name = whatwereyouthinking
+[credential]
+	helper = store

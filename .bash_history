@@ -371,3 +371,31 @@ nvim /etc/default/grub
 ls -la /etc/default/grub 
 exit
 exit
+alias update-grub grub-mkconfig -o /boot/grub/grub.cfg
+alias update-grub='grub-mkconfig -o /boot/grub/grub.cfg'
+echo "alias update-grub='grub-mkconfig -o /boot/grub/grub.cfg'" >> ~/.bashrc
+cat ~/.bashrc
+cat ~/.bash_profile 
+config status
+config status
+config commit -m "mod(.bashrc): new alias: grub-update"
+config add .
+config status
+config commit -m "mod(.bashrc): new alias: grub-update"
+config push origin master
+sudo config push
+ping -c 4 google.com
+ip link
+ip set wlp11s0 up
+ip link set wlp11s0 up
+sudo ip link set wlp11s0 up
+ip link
+ping -c 4 google.com
+netctl start my-wireless-wpa
+sudo netctl start my-wireless-wpa
+ls /etc/netctl/
+sudo netctl start my-wireless-wpa
+su
+ping -c 4 google.com
+nvim /etc/netctl/my-wireless-wpa 
+su
